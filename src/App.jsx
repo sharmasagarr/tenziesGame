@@ -63,7 +63,7 @@ export default function App(){
       {gameWon && <Confetti width={window.innerWidth} height={window.innerHeight} />}
       <div>
         <h1>Tenzies</h1>
-        <p>Roll until all dice are same. Click each die to freeze it at its current value baetween rolls.</p>
+        <p>Roll until all dice are same. Click each die to freeze it at its current value between rolls.</p>
       </div>
       <div className="dice-container">
         {diceElements}
