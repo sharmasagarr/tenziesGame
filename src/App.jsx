@@ -60,7 +60,7 @@ export default function App(){
 
   return (
     <main>
-      {gameWon && <Confetti width={1530} height={690} />}
+      {gameWon && <Confetti width={window.innerWidth} height={window.innerHeight} />}
       <div>
         <h1>Tenzies</h1>
         <p>Roll until all dice are same. Click each die to freeze it at its current value baetween rolls.</p>
