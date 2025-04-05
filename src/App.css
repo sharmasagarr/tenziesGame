@@ -52,5 +52,8 @@ p{
   padding-right: 2rem;
   white-space: nowrap;
   cursor: pointer;
+}
 
+.count{
+  margin-top: -1.5rem;
 }
