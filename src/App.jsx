@@ -76,7 +76,11 @@ export default function App(){
           {gameWon ? "New Game" : "Roll"}
         </button>
       </div>
-      <div className="count"><p>Count: {count}</p></div>
+      <div className="count">
+        <p>
+          {gameWon ? `Total Count: ${count}`: `Count: ${count}`}
+        </p>
+      </div>
     </main>
 )
 }
