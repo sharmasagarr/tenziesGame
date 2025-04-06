@@ -49,7 +49,7 @@ tenziesGame/
 
 ## 📸 Screenshots
 
-| ![Gameplay 1](./src/assets/Screenshot 2025-04-06 135718.png) | ![Gameplay 2](./src/assets/Screenshot 2025-04-06 135751.png) |
+| ![Gameplay 1](./src/assets/Screenshot%202025-04-06%20135718.png) | ![Gameplay 2](./src/assets/Screenshot%202025-04-06%20135751.png) |
 |:--------------------------------------:|:--------------------------------------:|
 | Gameplay 1                           | Gameplay 2                           |
 
