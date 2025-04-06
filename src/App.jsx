@@ -7,6 +7,7 @@ import Confetti from "react-confetti"
 export default function App(){
   const [dice, setDice] = useState(() => generateAllNewDice())
   const [count, setCount] = useState(0)
+  const [timer, setTimer] = useState(0)
   const buttonRef = useRef(null)
 
   const gameWon = dice.every(dieObj => dieObj.isHeld===true && dieObj.value===dice[0].value)
@@ -17,12 +18,23 @@ export default function App(){
     }
   }, [gameWon])
 
+  useEffect(() => {
+    if (gameWon) return;
+
+    const intervalId = setInterval(() => {
+      setTimer(prev => prev + 1)
+    }, 1000)
+
+    return () => clearInterval(intervalId);
+  },[gameWon])
+
   function generateAllNewDice(){
     return new Array(10)
       .fill(0)
       .map(() => (
         {
-          value: Math.ceil(Math.random() * 6), 
+          value: 6,
+          // value: Math.ceil(Math.random() * 6), 
           isHeld: false,
           id: nanoid()
         }
@@ -44,6 +56,7 @@ export default function App(){
     } else {
       setDice(generateAllNewDice())
       setCount(0)
+      setTimer(0)
       buttonRef.current.focus()
     }
   }
@@ -73,6 +86,10 @@ export default function App(){
     <main>
       {gameWon && <Confetti width={window.innerWidth} height={window.innerHeight} />}
       <div>
+        <div className={`timer ${gameWon ? "blink": null}`}>
+          <p>Timer: </p>
+          <span>{String(timer).padStart(2, '0')}s</span>
+        </div>
         <h1>Tenzies</h1>
         <p>Roll until all dice are same. Click each die to freeze it at its current value between rolls.</p>
       </div>

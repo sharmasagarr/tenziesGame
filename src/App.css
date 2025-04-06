@@ -9,6 +9,51 @@ main {
   align-items: center;
 }
 
+.head{
+  display: flex;
+  flex-direction: column;
+}
+
+.timer{
+  margin-top: -0.7rem;
+  justify-self: flex-end;
+  background-color: chartreuse;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer > p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+.timer > span{
+  font-size: x-small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.5rem;
+  padding-left: 0.3rem;
+  padding-right: 1.5rem;
+}
+
+.blink {
+  background-color: lightgreen;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 h1{
   margin: 0;
   text-align: center;
