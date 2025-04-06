@@ -48,8 +48,10 @@ tenziesGame/
 ```
 
 ## 📸 Screenshots
+Game Screenshots
 
-![Game Screenshot](./src/assets/Screenshot 2025-04-06 124350.png)(./src/assets/Screenshot 2025-04-06 124300.png)
+<img src="./src/assets/Screenshot 2025-04-06 124350.png" alt="Tenzies Game" width="300" />
+<img src="./src/assets/Screenshot 2025-04-06 124300.png" alt="Tenzies Game" width="300" />
 
 
 ## 🛠️ Installation & Setup
