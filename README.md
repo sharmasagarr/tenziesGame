@@ -30,8 +30,8 @@ You can hold (lock) dice to keep their values between rolls. The game ends when 
 tenziesGame/
 ├── src/
 |   ├── assets/
-|   |   ├── Screenshot 2025-04-06 124300.png
-|   |   └── Screenshot 2025-04-06 124350.png
+|   |   ├── Screenshot 2025-04-06 135718.png
+|   |   └── Screenshot 2025-04-06 135751.png
 │   ├── components/
 │   │   └── Die.jsx
 │   ├── App.css
