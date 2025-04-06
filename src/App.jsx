@@ -33,8 +33,7 @@ export default function App(){
       .fill(0)
       .map(() => (
         {
-          value: 6,
-          // value: Math.ceil(Math.random() * 6), 
+          value: Math.ceil(Math.random() * 6), 
           isHeld: false,
           id: nanoid()
         }
