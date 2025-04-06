@@ -2,7 +2,7 @@
 
 A fun and addictive dice game built **purely in React** using functional components and React Hooks.
 
-Play it here 👉 [Tenzies Game Live Demo](https://sharmasagarr.github.io/tanziesGame)
+Play it here 👉 [Tenzies Game Live Demo](https://sharmasagarr.github.io/tanziesGame/)
 
 ## 📌 What is Tenzies?
 
@@ -19,8 +19,8 @@ You can hold (lock) dice to keep their values between rolls. The game ends when 
 
 ## ⚙️ Tech Stack
 
-- **React** (with `useState`, `useEffect`)
-- **Vite** or **Create React App** (depending on setup)
+- **React** (with `useState`, `useEffect`, `useRef`)
+- **Vite**
 - **CSS** for styling
 - **GitHub Pages** for deployment
 
@@ -29,6 +29,9 @@ You can hold (lock) dice to keep their values between rolls. The game ends when 
 ```
 tenziesGame/
 ├── src/
+|   ├── assets/
+|   |   ├── Screenshot 2025-04-06 124300.png
+|   |   └── Screenshot 2025-04-06 124350.png
 │   ├── components/
 │   │   └── Die.jsx
 │   ├── App.css
@@ -52,7 +55,7 @@ tenziesGame/
 ## 🛠️ Installation & Setup
 
 ```bash
-git clone https://github.com/sharmasagarr/tanziesGame.git
+git clone https://github.com/sharmasagarr/tanziesGame.git/
 cd tanziesGame
 npm install
 npm run dev      # or `npm start` if using Create React App
@@ -67,7 +70,7 @@ npm run build
 npm run deploy   # if using gh-pages package
 ```
 
-Live at 👉 [https://sharmasagarr.github.io/tanziesGame](https://sharmasagarr.github.io/tanziesGame)
+Live at 👉 [https://sharmasagarr.github.io/tanziesGame](https://sharmasagarr.github.io/tanziesGame/)
 
 ## 🙌 Credits
 
