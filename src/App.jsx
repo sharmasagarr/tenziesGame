@@ -19,7 +19,8 @@ export default function App(){
   }, [gameWon])
 
   useEffect(() => {
-    if (gameWon) return;
+    if (gameWon) return
+    if (timer >= 499) return
 
     const intervalId = setInterval(() => {
       setTimer(prev => prev + 1)
