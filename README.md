@@ -71,7 +71,7 @@ npm run build
 npm run deploy   # if using gh-pages package
 ```
 
-Live at 👉 [https://sharmasagarr.github.io/tanziesGame](https://sharmasagarr.github.io/tenziesGame)
+Live at 👉 [https://sharmasagarr.github.io/tenziesGame](https://sharmasagarr.github.io/tenziesGame)
 
 ## 🙌 Credits
 
