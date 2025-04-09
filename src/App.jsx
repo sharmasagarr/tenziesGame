@@ -84,7 +84,14 @@ export default function App(){
 
   return (
     <main>
-      {gameWon && <Confetti width={window.innerWidth} height={window.innerHeight} />}
+      {gameWon && 
+        <Confetti
+          recycle={false}
+          numberOfPieces={2000}
+          width={window.innerWidth} 
+          height={window.innerHeight} 
+        />
+      }
       <div>
         <div className={`timer ${gameWon ? "blink": null}`}>
           <p>Timer: </p>
